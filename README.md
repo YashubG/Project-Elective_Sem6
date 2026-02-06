@@ -1,31 +1,31 @@
-# Project-Elective_Sem6
-This project, the Subsea Cable Vulnerability Index (SCVI) 3.0, is a sophisticated attempt to quantify how "safe" a country's internet connection is from a physical, political, and operational standpoint. While most people think of "the cloud" as something in the sky, 99% of global data actually travels through hair-thin glass fibers at the bottom of the ocean.
+# Subsea Cable Vulnerability Index (SCVI) 3.0
 
-## 🛡️ 1. Understanding the Four Pillars of Vulnerability
-
-The project quantifies risk by breaking down infrastructure health into four equal "Pillars," each contributing **25%** to the final vulnerability score.
+**Objective:** To construct a unified framework that quantifies national digital sovereignty by merging physical infrastructure fragility with geopolitical and operational risks.
 
 ---
+
+## The 4 Pillars of Vulnerability (Weight: 25% Each)
 
 ### Pillar I: Physical Network Robustness
-*Focus: The geometry and structural resilience of physical cable layouts.*
+*Focuses on the mathematical and topological strength of the cable grid.*
+- **Route Diversity (HHI):** Measures concentration; high scores indicate a "single point of failure" risk.
+- **Node Betweenness Centrality:** Identifies critical "bridge" nations whose disruption impacts global traffic.
+- **Algebraic Connectivity:** Uses the Fiedler value to determine how easily a network can be partitioned into isolated islands.
 
-This pillar analyzes how geography and network design influence the likelihood of a total system failure.
+### Pillar II: Geographic & Environmental Exposure
+*Focuses on the physical environment where cables are laid.*
+- **Chokepoint Dependency:** Vulnerability to narrow maritime passages (e.g., Malacca Strait, Red Sea).
+- **Depth Analysis:** Cables in "Shallow Water" (<200m) are at higher risk from fishing and anchors.
+- **Conflict Zone Proximity:** Exposure to areas with active naval tensions or high piracy.
 
-#### 📍 Route Diversity ($HHI_{route}$)
-If a country’s cables are concentrated in one narrow gap (like the Red Sea), a single anchor drag can take out the entire country. We mathematically identify this "concentration" using the **Herfindahl-Hirschman Index**:
+### Pillar III: Operational Sovereignty
+*Focuses on a nation's ability to maintain and repair its own connectivity.*
+- **Sovereign Repair Vessels:** Availability of domestic-flagged ships to perform repairs during crises.
+- **Cable Protection Zones (CPZs):** Existence of legal frameworks and exclusion zones to prevent accidental damage.
+- **Repair Latency:** Estimated time to fix a break based on ship proximity and permitting speed.
 
-$$HHI_{route} = \sum_{i=1}^{N} s_i^2$$
-
-> **Note:** A higher $HHI$ score indicates a dangerous lack of diversity, signaling a "single point of failure."
-
-#### 🔗 Node Betweenness Centrality
-This metric identifies countries that act as **"Bridges."** * **The Risk:** If a country is a major hub, it becomes a high-value target during a conflict. 
-* **The Impact:** Cutting cables at a high-centrality node disrupts not just the host nation, but many other dependent nations.
-
-#### 📐 Algebraic Connectivity
-We use the **"Fiedler value"** of the network graph to measure its structural integrity.
-* This identifies how easily a network can be split into two "disconnected islands."
-* It provides a mathematical snapshot of the network's overall cohesion and its ability to withstand multiple simultaneous cuts.
-
----
+### Pillar IV: Geopolitical & Ownership Security
+*Focuses on the influence of foreign actors and corporate entities.*
+- **Ownership Diversity:** Reliance on "Hyperscalers" (Google, Meta, Amazon) vs. local/state entities.
+- **Transit State Alignment:** Measures the political "friction" of cables passing through foreign EEZs.
+- **UN Voting Alignment:** Uses diplomatic data to weigh the risk of a transit state interfering with cable operations.
