@@ -3,7 +3,6 @@
 
 ![Version](https://img.shields.io/badge/version-3.0.0-blue.svg)
 ![Field](https://img.shields.io/badge/Field-Geopolitics%20%26%20Network%20Science-orange)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 ---
 
@@ -60,11 +59,13 @@ The index is calculated as a weighted average (25% each) of the following pillar
 - **Visualization:** `Streamlit`, `Plotly`, `Folium`
 - **Data Sources:** TeleGeography, PCH, MarineRegions.org
 
+<!-- 
 ---
 
 ## ⚠️ Disclaimer
 > [!IMPORTANT]
 > This project is for academic purposes at **IIIT Bengaluru**. It utilizes proprietary data from **TeleGeography**; users must ensure they have a valid subscription to access the raw `.json` datasets.
+-->
 
 ---
 **References:**
